@@ -1,0 +1,15 @@
+﻿{
+  "manifest_version": 3,
+  "name": "YouTube Oldest Comments",
+  "version": "0.1.0",
+  "description": "Adds an \"Oldest\" option to YouTube's comment sort menu and sorts loaded comments from oldest to newest.",
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

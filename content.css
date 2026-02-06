@@ -1,0 +1,42 @@
+﻿a[data-oldest-item="true"].iron-selected .item,
+a[data-oldest-item="true"][aria-selected="true"] .item,
+tp-yt-paper-item[data-oldest-item="true"][data-selected="true"] .item,
+ytd-menu-service-item-renderer[data-oldest-item="true"][data-selected="true"] yt-formatted-string,
+tp-yt-paper-item[data-oldest-item="true"][data-selected="true"] yt-formatted-string {
+  font-weight: 600;
+}
+
+#yt-oldest-status {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  background: rgba(15, 15, 15, 0.9);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  display: none;
+  gap: 8px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+#yt-oldest-status .text {
+  white-space: nowrap;
+}
+
+#yt-oldest-status button {
+  background: #e2e2e2;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#yt-oldest-status button:hover {
+  background: #fff;
+}
