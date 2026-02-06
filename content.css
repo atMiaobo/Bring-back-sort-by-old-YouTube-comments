@@ -40,3 +40,78 @@ tp-yt-paper-item[data-oldest-item="true"][data-selected="true"] yt-formatted-str
 #yt-oldest-status button:hover {
   background: #fff;
 }
+
+#yt-oldest-list {
+  margin-top: 12px;
+}
+
+#yt-oldest-list .yt-oldest-loading {
+  padding: 12px 0;
+  font-size: 13px;
+  color: var(--yt-spec-text-secondary, #606060);
+}
+
+#yt-oldest-list .yt-oldest-comment {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.12));
+}
+
+#yt-oldest-list .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+#yt-oldest-list .body {
+  flex: 1;
+  min-width: 0;
+}
+
+#yt-oldest-list .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--yt-spec-text-secondary, #606060);
+}
+
+#yt-oldest-list .author {
+  font-weight: 600;
+  color: var(--yt-spec-text-primary, #0f0f0f);
+}
+
+#yt-oldest-list .time,
+#yt-oldest-list .likes {
+  color: var(--yt-spec-text-secondary, #606060);
+}
+
+#yt-oldest-list .text {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  color: var(--yt-spec-text-primary, #0f0f0f);
+}
+
+#yt-oldest-list .yt-oldest-header {
+  font-size: 12px;
+  color: var(--yt-spec-text-secondary, #606060);
+  margin: 4px 0 8px;
+}
+
+#yt-oldest-debug {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  display: none;
+}
